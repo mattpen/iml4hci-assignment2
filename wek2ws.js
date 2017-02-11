@@ -15,7 +15,7 @@ var wekinatorServer = new wekinator();
 // Connect to wekinator outputs on port 12000
 wekinatorServer.connect( function() {
   wekinatorServer.on( 'osc', function( oscMessage ) {
-    console.log( oscMessage );
+    //console.log( oscMessage );
 
     // Send outputs to any client listening on port 12100 
     webSocketServer.clients.forEach( function (client) {
